@@ -15,17 +15,39 @@
 </a>
 [![PyPI](https://img.shields.io/pypi/v/openbb?color=blue&label=PyPI%20Package)](https://pypi.org/project/openbb/)
 
-The first financial Platform that is open source.
+The first open-source financial Platform for biotech and pharma investing.
 
-The OpenBB Platform offers access to equity, options, crypto, forex, macro economy, fixed income, and more while also offering a broad range of extensions to enhance the user experience according to their needs.
+The OpenBB Platform provides specialized access to biotech and pharmaceutical data including clinical trials, drug pipelines, regulatory milestones, and company analytics. Built on an open-source foundation, it also offers access to equity, options, crypto, forex, macro economy, fixed income, and more.
 
-Get started with: `pip install openbb`
+Get started with: `pip install openbb[biotech]`
 
 ```python
 from openbb import obb
-output = obb.equity.price.historical("AAPL")
-df = output.to_dataframe()
+
+# Search clinical trials
+trials = obb.biotech.trials.search(
+    query="cancer",
+    phase="3",
+    status="recruiting",
+    provider="clinicaltrials"
+)
+
+# Get biotech company profile
+profile = obb.biotech.profile(symbol="MRNA", provider="fmp")
+
+# Track drug pipeline
+pipeline = obb.biotech.pipeline.company(symbol="GILD", provider="fmp")
 ```
+
+### Biotech/Pharma Features
+
+- **Clinical Trials**: Search and analyze clinical trials from ClinicalTrials.gov
+- **Drug Pipelines**: Track drug development across companies and indications
+- **Success Analytics**: Historical trial success rates by phase and indication
+- **Competitive Landscape**: Compare pipelines across multiple companies
+- **Regulatory Milestones**: Track FDA decisions and upcoming catalysts
+
+All biotech features are **100% open source** (AGPL-3.0) with no proprietary components.
 
 You can sign up to the [OpenBB Hub](https://my.openbb.co/login) to get the most out of the OpenBB ecosystem.
 
