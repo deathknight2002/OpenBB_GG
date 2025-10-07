@@ -4,6 +4,16 @@ This folder is a collection of example notebooks that demonstrate some of the wa
 
 ## Table of Contents
 
+### biotechResearch
+
+This notebook demonstrates biotech and pharmaceutical investment research using OpenBB's biotech extension.
+
+- Search clinical trials from ClinicalTrials.gov
+- Get detailed trial information
+- Analyze company profiles and drug pipelines
+- Compare trials across disease indications
+- Complete investment research workflow
+
 ### googleColab
 
 This notebook installs the OpenBB Platform in a Google Colab environment with examples for:
