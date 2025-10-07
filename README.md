@@ -147,6 +147,23 @@ or by cloning the repository directly with  `git clone https://github.com/OpenBB
 
 Please find more about the installation process in the [OpenBB Documentation](https://docs.openbb.co/cli/installation).
 
+### Biotech Extension
+
+For biotech and pharma-specific features, install with:
+
+```bash
+pip install openbb[biotech]
+```
+
+Or install from source:
+
+```bash
+cd openbb_platform/extensions/biotech
+pip install -e .
+```
+
+See [biotech extension documentation](openbb_platform/extensions/biotech/README.md) for detailed usage.
+
 ## 2. Contributing
 
 There are three main ways of contributing to this project. (Hopefully you have starred the project by now ⭐️)
@@ -171,6 +188,25 @@ We are most active on [our Discord](https://openbb.co/discord), but feel free to
 
 Distributed under the AGPLv3 License. See
 [LICENSE](https://github.com/OpenBB-finance/OpenBB/blob/main/LICENSE) for more information.
+
+### 100% Open Source Commitment
+
+This project is **entirely open source** under AGPL-3.0, including:
+- All biotech and pharma extensions
+- Clinical trials data providers
+- Drug pipeline analytics
+- Standard data models
+- API endpoints and routers
+
+There are **no proprietary components** or closed-source modules. Everything you see in this repository is freely available for use, modification, and distribution under the AGPL-3.0 license.
+
+#### Why AGPL-3.0?
+
+We chose AGPL-3.0 to ensure:
+- **Community-driven development**: Everyone can contribute and improve the platform
+- **Transparency**: All code is open for review and audit
+- **Network copyleft**: Even when used as a service, modifications must be shared
+- **Freedom**: Use, study, modify, and distribute without restrictions
 
 ## 4. Disclaimer
 
